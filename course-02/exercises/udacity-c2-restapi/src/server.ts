@@ -1,4 +1,7 @@
 import express from 'express';
+import dotenv from 'dotenv';
+dotenv.config();
+
 import { sequelize } from './sequelize';
 
 import { IndexRouter } from './controllers/v0/index.router';
@@ -6,6 +9,7 @@ import { IndexRouter } from './controllers/v0/index.router';
 import bodyParser from 'body-parser';
 
 import { V0MODELS } from './controllers/v0/model.index';
+dotenv.config();
 
 (async () => {
   await sequelize.addModels(V0MODELS);

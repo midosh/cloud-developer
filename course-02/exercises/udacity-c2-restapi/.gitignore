@@ -11,8 +11,7 @@ log.txt
 *.sublime-workspace
 .vscode/
 npm-debug.log*
-src/config/
-
+.env
 .idea/
 .ionic/
 .sourcemaps/
